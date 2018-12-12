@@ -1,0 +1,40 @@
+<h1>Calculadora</h1>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="4">
+          <input type="text" [(ngModel)]="resultado" >
+      </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="<-" (click)="retrocede()"></td>
+      <td><input type="button" value="CE"></td>
+      <td><input type="button" value="C"></td>
+      <td><input type="button" value="+/-"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" (click)="escribe('7')" ></td>
+      <td><input type="button" value="8" (click)="escribe('8')" ></td>
+      <td><input type="button" value="9" (click)="escribe('9')" ></td>
+      <td><input type="button" value="/" (click)="escribe('/')" ></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" (click)="escribe('4')" ></td>
+      <td><input type="button" value="5" (click)="escribe('5')" ></td>
+      <td><input type="button" value="6" (click)="escribe('6')" ></td>
+      <td><input type="button" value="*" (click)="escribe('*')" ></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" (click)="escribe('1')" ></td>
+      <td><input type="button" value="2" (click)="escribe('2')" ></td>
+      <td><input type="button" value="3" (click)="escribe('3')" ></td>
+      <td><input type="button" value="-" (click)="escribe('-')" ></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" value="0" (click)="escribe('0')" ></td>
+      <td><input type="button" value="," (click)="escribe(',')" ></td>
+      <td><input type="button" value="+" (click)="escribe('+')" ></td>
+      <td><input type="button" value="=" (click)="calcula()" ></td>
+    </tr>
+  </tbody>
+</table>
